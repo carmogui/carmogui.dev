@@ -3,7 +3,7 @@ function Home() {
     <div>
       <h1>carmogui.dev website</h1>
     </div>
-  )
+  );
 }
 
 export default Home;
