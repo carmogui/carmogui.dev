@@ -1,9 +1,7 @@
+import { UnderConstruction } from "../components/under-construction";
+
 function Home() {
-  return (
-    <div>
-      <h1>carmogui.dev website</h1>
-    </div>
-  );
+  return <UnderConstruction />;
 }
 
 export default Home;
