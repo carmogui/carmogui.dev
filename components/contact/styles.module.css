@@ -1,0 +1,97 @@
+.sectionTitle {
+  font-size: 42px;
+  font-weight: 900;
+}
+
+.contactsWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 30px;
+}
+
+.contactContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 30px;
+  background-color: var(--color-header);
+  border-radius: 8px;
+}
+
+.contactContainer svg {
+  width: 24px;
+  height: 24px;
+}
+
+.startWrapper,
+.endWrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.cardButtons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.button {
+  display: flex;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--color-text-primary);
+}
+
+.button:hover {
+  color: var(--color-bg-secondary);
+}
+
+.text,
+.textInfo {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+@media (max-width: 700px) {
+  .contactContainer {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .endWrapper {
+    flex-direction: column;
+  }
+}
+
+.popUpContainer {
+  display: flex;
+  position: relative;
+}
+
+.popUp {
+  pointer-events: none;
+  position: absolute;
+  border-radius: 30px;
+  font-size: 14px;
+  padding: 6px 12px;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -170%);
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-secondary);
+
+  opacity: 0;
+}
+
+.button:active + .popUp {
+  opacity: 1;
+}
+
+.button:not(:active) + .popUp {
+  /* now keep red background for 1s */
+  transition: opacity 1000ms step-end;
+}

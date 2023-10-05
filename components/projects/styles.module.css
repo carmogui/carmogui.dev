@@ -1,0 +1,49 @@
+.sectionTitle {
+  font-size: 42px;
+  font-weight: 900;
+}
+
+.projectSection {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 80px;
+}
+
+@media (max-width: 700px) {
+  .projectSection {
+    flex-direction: column;
+  }
+}
+
+.project {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.projectInfo {
+  font-size: 16px;
+  color: var(--color-text-secondary);
+}
+
+.projectTitle {
+  font-size: 32px;
+}
+
+.text {
+  font-size: 16px;
+  color: var(--color-text-secondary);
+}
+
+.textLink {
+  font-weight: 600;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.textLink:hover {
+  color: var(--color-bg-secondary);
+}

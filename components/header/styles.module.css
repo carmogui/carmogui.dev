@@ -1,0 +1,95 @@
+.header {
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--color-header);
+  box-shadow: 0px -18px 20px 0px black;
+  z-index: 2;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 40px;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  padding: 10px 20px;
+}
+
+.titleWrapper {
+  display: flex;
+  text-decoration: none;
+  color: inherit;
+}
+
+.titleWrapper,
+.anchorButton {
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+}
+
+.title,
+.lastTitle {
+  font-weight: 900;
+}
+
+.lastTitle {
+  color: var(--color-bg-secondary);
+}
+
+.buttonsWrapper {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 40px;
+  padding: 8px 0;
+}
+
+.anchorButton {
+  text-decoration: none;
+  color: inherit;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.anchorButton:hover {
+  color: var(--color-bg-secondary);
+}
+
+.buttonContainer {
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+
+.themeButton {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  color: var(--color-text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 8px;
+}
+
+.themeButton svg {
+  height: 20px;
+  width: 20px;
+}
+
+.themeButton:hover {
+  background-color: var(--color-bg-secondary);
+}

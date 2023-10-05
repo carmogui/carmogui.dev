@@ -1,0 +1,186 @@
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 80px;
+  min-height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.imageWrapper {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  width: 683px;
+}
+
+.profilePicture {
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.59) 0px 25px 50px -12px;
+  width: 400px;
+  height: 400px;
+}
+
+.nameWrapper {
+  position: absolute;
+  bottom: -28%;
+  left: 24%;
+}
+
+.name,
+.lastName {
+  font-size: 100px;
+  font-weight: 900;
+}
+
+.name {
+  text-shadow: -3px 2px var(--color-bg-primary);
+}
+
+@media (max-width: 1300px) {
+  .main {
+    gap: 0;
+    padding: 80px;
+  }
+}
+
+@media (max-width: 850px) {
+  .main {
+    padding: 100px 20px 0;
+  }
+  .profilePicture {
+    width: 50vw;
+    height: 50vw;
+  }
+
+  .name,
+  .lastName {
+    font-size: 12vw;
+  }
+}
+
+.lastName {
+  color: var(--color-bg-secondary);
+}
+
+.arrowsWrapper {
+  position: relative;
+  cursor: pointer;
+  width: 250px;
+  height: calc(400px + 150px);
+  color: inherit;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 1000px) {
+  .arrowsWrapper {
+    height: 40vh;
+    margin-top: 60px;
+    align-self: flex-start;
+  }
+}
+
+.arrowsWrapper:hover .arrow,
+.arrowsWrapper:hover .arrow1,
+.arrowsWrapper:hover .arrow2,
+.arrowsWrapper:hover .arrow3 {
+  color: var(--color-bg-secondary);
+}
+
+@keyframes arrowMove {
+  0% {
+    top: -10%;
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    top: 80%;
+    opacity: 0;
+  }
+}
+
+.arrow,
+.arrow1,
+.arrow2,
+.arrow3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  animation-timing-function: linear;
+  animation-name: arrowMove;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+  opacity: 0;
+  left: 50px;
+}
+
+.arrow svg,
+.arrow1 svg,
+.arrow2 svg,
+.arrow3 svg {
+  height: 150px;
+  width: 150px;
+}
+
+.arrow1 {
+  animation-delay: 1s;
+}
+
+.arrow2 {
+  animation-delay: 2s;
+}
+
+.arrow3 {
+  animation-delay: 3s;
+}
+
+.roundedName {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background-color: red;
+}
+
+.letter1,
+.letter2,
+.letter3,
+.letter4,
+.letter5 {
+  font: 26px Monaco, MonoSpace;
+  height: 200px;
+  position: absolute;
+  width: 20px;
+  left: 0;
+  top: 0;
+  transform-origin: bottom center;
+  background-color: blue;
+  transform: rotate(6deg);
+}
+
+.letter2 {
+  transform: rotate(12deg);
+}
+.letter3 {
+  transform: rotate(18deg);
+}
+.letter4 {
+  transform: rotate(24deg);
+}
+.letter5 {
+  transform: rotate(30deg);
+}
