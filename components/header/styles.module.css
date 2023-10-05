@@ -52,12 +52,6 @@
   padding: 8px 0;
 }
 
-@media (max-width: 550px) {
-  .buttonsWrapper {
-    gap: 10px;
-  }
-}
-
 .anchorButton {
   text-decoration: none;
   color: inherit;
@@ -98,4 +92,14 @@
 
 .themeButton:hover {
   background-color: var(--color-bg-secondary);
+}
+
+@media (max-width: 550px) {
+  .buttonsWrapper {
+    gap: 10px;
+  }
+
+  .themeButton:hover {
+    background-color: unset;
+  }
 }
