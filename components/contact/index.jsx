@@ -11,7 +11,9 @@ import { Main } from "../main";
 import styles from "./styles.module.css";
 
 const GITHUB = "carmogui";
+const GITHUB_LINK = "https://github.com/carmogui";
 const LINKEDIN = "carmogui";
+const LINKEDIN_LINK = "https://www.linkedin.com/in/carmogui";
 const EMAIL = "contact@carmogui.dev";
 
 export function Contact() {
@@ -36,7 +38,7 @@ export function Contact() {
             <div className={styles.cardButtons}>
               <div className={styles.popUpContainer}>
                 <button
-                  onClick={() => copyText(GITHUB)}
+                  onClick={() => copyText(GITHUB_LINK)}
                   className={styles.button}
                 >
                   <CopyIcon />
@@ -68,7 +70,7 @@ export function Contact() {
             <div className={styles.cardButtons}>
               <div className={styles.popUpContainer}>
                 <button
-                  onClick={() => copyText(LINKEDIN)}
+                  onClick={() => copyText(LINKEDIN_LINK)}
                   className={styles.button}
                 >
                   <CopyIcon />
