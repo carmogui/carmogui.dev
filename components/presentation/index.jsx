@@ -7,13 +7,41 @@ export function Presentation() {
     <div id="home" className={styles.main}>
       <div className={styles.imageWrapper}>
         <div className={styles.nameWrapper}>
-          <h2 className={styles.name}>Guilherme</h2>
-          <h2 className={styles.lastName}>Carmo</h2>
+          <h2 className={styles.name}>Software</h2>
+          <h2 className={styles.lastName}>Engineer</h2>
         </div>
 
-        <h3>software engineer --- typescript / react</h3>
-        <h4 className={styles.secondary}>frontend specialist</h4>
-        <h4>backend beginner</h4>
+        <h3></h3>
+
+        <div className={styles.welcomeContainer}>
+          <div className={styles.welcomeWrapper}>
+            <span className={styles.welcomeText}>
+              Hi, my name is <strong>Guilherme Carmo</strong>
+            </span>
+            <span className={styles.welcomeTextDown}>
+              and I work with software development
+            </span>
+          </div>
+
+          <div className={styles.welcomeWrapper}>
+            <span className={styles.welcomeText}>
+              I primary evolved my <strong>frontend skills</strong>,
+            </span>
+            <span className={styles.welcomeTextDown}>
+              and now I'm learning some{" "}
+              <strong>backend and devops skills</strong>
+            </span>
+          </div>
+
+          <div className={styles.welcomeWrapper}>
+            <span className={styles.welcomeText}>
+              I like being <strong>part of a team</strong>
+            </span>
+            <span className={styles.welcomeTextDown}>
+              where everyone feels good <strong>collaborating</strong>
+            </span>
+          </div>
+        </div>
       </div>
 
       <button

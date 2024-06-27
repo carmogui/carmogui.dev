@@ -5,6 +5,7 @@ export default function Document() {
     <Html lang="en">
       <Head>
         <link rel="shortcut icon" href="/static/favicon.ico" />
+        <title>carmogui.dev</title>
       </Head>
 
       <body>

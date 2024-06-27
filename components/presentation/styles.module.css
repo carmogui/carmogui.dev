@@ -33,7 +33,7 @@
 
 .name,
 .lastName {
-  font-size: 82px;
+  font-size: 72px;
   font-weight: 900;
 }
 
@@ -65,8 +65,36 @@
 
 .lastName {
   color: var(--color-bg-secondary);
+  padding-left: 38px;
+  padding-bottom: 38px;
 }
 
+.welcomeContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.welcomeWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.welcomeText,
+.welcomeTextDown {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.welcomeText strong,
+.welcomeTextDown strong {
+  font-weight: 400;
+  color: var(--color-bg-secondary);
+}
+
+.welcomeTextDown {
+  padding-left: 20px;
+}
 .secondary {
   color: var(--color-bg-secondary);
 }
