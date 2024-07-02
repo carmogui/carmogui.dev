@@ -41,6 +41,19 @@ export function Presentation() {
               where everyone feels good <strong>collaborating</strong>
             </span>
           </div>
+
+          <span>...</span>
+
+          <div>
+            <span>some code drafts I created: </span>
+            <a
+              className={styles.draftboxButton}
+              href="https://draftbox.carmogui.dev/"
+              target="_blank"
+            >
+              draftbox
+            </a>
+          </div>
         </div>
       </div>
 

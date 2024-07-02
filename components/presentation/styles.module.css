@@ -217,3 +217,15 @@
 .letter5 {
   transform: rotate(30deg);
 }
+
+.draftboxButton {
+  border-radius: 8px;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+  background-color: var(--color-bg-secondary);
+}
+
+.draftboxButton:hover {
+  opacity: 0.7;
+}
