@@ -1,5 +1,6 @@
 import { Main } from "../main";
 import styles from "./styles.module.css";
+import { OpenInNewIcon } from "../../static/icons";
 
 export function Projects() {
   return (
@@ -71,7 +72,7 @@ export function Projects() {
         </div>
 
         <div className={styles.project}>
-          <span className={styles.projectInfo}>sideproject</span>
+          <span className={styles.projectInfo}>personal projects</span>
           <h3 className={styles.projectTitle}>sideuniverse</h3>
           <div>
             <a
@@ -119,6 +120,104 @@ export function Projects() {
               tabnews
             </a>
             <span className={styles.text}>.</span>
+          </div>
+
+          <div className={styles.buttonWrapper}>
+            <a
+              href="https://www.sideuniverse.dev/"
+              target="_blank"
+              className={styles.buttonVisitWebsite}
+            >
+              <span>visit website</span>
+              <OpenInNewIcon />
+            </a>
+          </div>
+
+          <br />
+
+          <h3 className={styles.projectTitle}>
+            Zeratami <span className={styles.text}>JS</span>
+          </h3>
+          <div>
+            <a
+              className={styles.textLink}
+              href="https://zeratami.com/"
+              target="_blank"
+            >
+              zeratami
+            </a>{" "}
+            <span className={styles.text}>
+              is a game I created with JavaScript and React, with some new
+              libraries for me, like{" "}
+            </span>
+            <a
+              className={styles.textLink}
+              href="https://zustand-demo.pmnd.rs/"
+              target="_blank"
+            >
+              zustand
+            </a>
+            <span className={styles.text}>
+              , for global state management, and{" "}
+            </span>
+            <a
+              className={styles.textLink}
+              href="https://r3f.docs.pmnd.rs/getting-started/introduction"
+              target="_blank"
+            >
+              react three fiber
+            </a>
+            <span className={styles.text}>
+              , for rendering and controlling 3d objects on the website.
+            </span>
+          </div>
+
+          <div className={styles.buttonWrapper}>
+            <a
+              href="https://zeratami.com/"
+              target="_blank"
+              className={styles.buttonVisitWebsite}
+            >
+              <span>visit website</span>
+              <OpenInNewIcon />
+            </a>
+          </div>
+
+          <br />
+
+          <h3 className={styles.projectTitle}>
+            Zeratami <span className={styles.text}>Godot</span>
+          </h3>
+          <div>
+            <span className={styles.text}>
+              By facing some problems dealing with 3d particles in JavaScript, I
+              restart the development of this game using the open source game
+              engine{" "}
+            </span>
+            <a
+              className={styles.textLink}
+              href="https://godotengine.org/"
+              target="_blank"
+            >
+              Godot
+            </a>
+          </div>
+          <div>
+            <span className={styles.text}>
+              I learned a new development language (gdscript), and I was able to
+              practice some object-oriented programming concepts again
+            </span>
+          </div>
+
+          <div className={styles.buttonWrapper}>
+            <a
+              href="https://pexesan.itch.io/zeratami"
+              target="_blank"
+              className={styles.buttonVisitWebsite}
+            >
+              <span>visit website</span>
+              <OpenInNewIcon />
+            </a>
           </div>
         </div>
       </div>
