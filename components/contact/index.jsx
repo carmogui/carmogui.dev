@@ -2,7 +2,6 @@ import {
   ContactPageIcon,
   CopyIcon,
   GithubIcon,
-  LinkedinIcon,
   MailIcon,
   OpenInNewIcon,
 } from "../../static/icons";
@@ -12,9 +11,7 @@ import styles from "./styles.module.css";
 
 const GITHUB = "carmogui";
 const GITHUB_LINK = "https://github.com/carmogui";
-const LINKEDIN = "carmogui";
-const LINKEDIN_LINK = "https://www.linkedin.com/in/carmogui";
-const EMAIL = "contact@carmogui.dev";
+const EMAIL = "pexesim@gmail.com";
 
 export function Contact() {
   function copyText(text) {
@@ -60,38 +57,6 @@ export function Contact() {
 
         <div className={styles.contactContainer}>
           <div className={styles.startWrapper}>
-            <LinkedinIcon />
-            <span className={styles.text}>linkedin</span>
-          </div>
-
-          <div className={styles.endWrapper}>
-            <p className={styles.textInfo}>{LINKEDIN}</p>
-
-            <div className={styles.cardButtons}>
-              <div className={styles.popUpContainer}>
-                <button
-                  onClick={() => copyText(LINKEDIN_LINK)}
-                  className={styles.button}
-                >
-                  <CopyIcon />
-                </button>
-
-                <span className={styles.popUp}>copied</span>
-              </div>
-
-              <a
-                href="https://www.linkedin.com/in/carmogui/"
-                target="_black"
-                className={styles.button}
-              >
-                <OpenInNewIcon />
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div className={styles.contactContainer}>
-          <div className={styles.startWrapper}>
             <MailIcon />
             <span className={styles.text}>email</span>
           </div>
@@ -112,7 +77,7 @@ export function Contact() {
               </div>
 
               <a
-                href="mailto:contact@carmogui.dev"
+                href={`mailto:${EMAIL}`}
                 target="_black"
                 className={styles.button}
               >
